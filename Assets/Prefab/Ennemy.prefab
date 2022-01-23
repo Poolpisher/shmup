@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -6952269830121910470}
   - component: {fileID: 1493806548803801252}
   - component: {fileID: 1127028181085520097}
+  - component: {fileID: 5217169231064008008}
   m_Layer: 8
   m_Name: Ennemy
   m_TagString: Ennemy
@@ -132,7 +133,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6689477378737425886}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -193,3 +194,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: -1}
   cadence: 1
+--- !u!114 &5217169231064008008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689477378737425886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c969fe256d0925645ab9fbe4fe726b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

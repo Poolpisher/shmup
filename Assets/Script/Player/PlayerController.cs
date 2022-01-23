@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private Shooter shooter;
     private Move2D move2D;
 
-    private bool canShoot;
+    private bool isShooting;
     private float lastShoot;
     [SerializeField] private float cadence;
     
@@ -34,17 +34,17 @@ public class PlayerController : MonoBehaviour
         //Si la touche est maintenu
         if(obj.phase == InputActionPhase.Started || obj.phase == InputActionPhase.Performed)
         {
-            canShoot = true;
+            isShooting = true;
         }
         else
         {
-            canShoot = false;
+            isShooting = false;
         }
     }
 
     private void Update()
     {
-        if (canShoot &&  Time.time > lastShoot + cadence)
+        if (isShooting &&  Time.time > lastShoot + cadence)
         {
             shooter.Shoot(Vector2.up);
             //Changement de la valeur du dernier tir

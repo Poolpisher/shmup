@@ -16,7 +16,7 @@ public class LosangePattern : MonoBehaviour
     private IEnumerator Move()
     {
         //attente jusqu'au mouvement
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         canMove = true;
     }
 
